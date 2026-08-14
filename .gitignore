@@ -1,0 +1,11 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+venv/
+digital-twin/node_modules/
+digital-twin/dist/
+*.log
+.idea/
+.vscode/
+.tools/
