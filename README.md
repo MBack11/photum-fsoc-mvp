@@ -5,9 +5,7 @@ Interactive digital twin, receiver optics/mechanics, receiver electronics, and h
 **Live 3D twin:** [mback11.github.io/photum-fsoc-mvp](https://mback11.github.io/photum-fsoc-mvp/)  
 **Club write-up:** [photum.org/mvp.html](https://photum.org/mvp.html)
 
-![Prototype bench](media/prototype-bench.png)
-
-## Demo results (Photonics Night)
+## Demo results
 
 | Spec | Value |
 |------|--------|
@@ -43,7 +41,7 @@ Host (sender GUI)
 
 ## My role
 
-Work done in the phoTUM student club at TUM. This public repo packages the MVP for portfolio use. Hardware and digital twin are a **team** effort — see [photum.org](https://photum.org/). I contributed to the FSOC receiver / link build and to making this material reproducible here.
+Work done in the phoTUM student club at TUM. This public repo packages the MVP for portfolio use. Hardware and digital twin are a **team** effort — see [photum.org](https://photum.org/). As project lead I overviewed the whole process and especially contributed to the 3D printed Hardware as well as to the Electronics. 
 
 ## Quick start
 
