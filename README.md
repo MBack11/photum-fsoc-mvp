@@ -41,7 +41,7 @@ Host (sender GUI)
 
 ## My role
 
-Work done in the phoTUM student club at TUM. This public repo packages the MVP for portfolio use. Hardware and digital twin are a **team** effort — see [photum.org](https://photum.org/). As project lead I overviewed the whole process and especially contributed to the 3D printed Hardware as well as to the Electronics. 
+Work done in the phoTUM student club at TUM. This public repo packages the MVP for portfolio use. Hardware and digital twin are a **team** effort — see [photum.org](https://photum.org/). As project lead I overviewed the whole process and especially contributed to the 3D printed hardware as well as to the electronics. 
 
 ## Quick start
 
@@ -70,6 +70,4 @@ Firmware for the Arduino OOK driver and Pico receiver is not in this snapshot ye
 Built with **[phoTUM](https://photum.org/)**, Photonics Student Club at the Technical University of Munich.  
 Contact: photum.studentclub@gmail.com
 
-## License
 
-Code in this repository is released under the MIT License unless noted otherwise. CAD-derived 3D models and photos remain phoTUM project assets; reuse with attribution.
