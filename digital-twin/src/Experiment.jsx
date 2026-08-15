@@ -4,7 +4,8 @@ import { useGLTF, Outlines } from '@react-three/drei'
 import * as THREE from 'three'
 import { PARTS } from './parts.js'
 
-const MODEL_URL = '/FSOC.glb'
+// Respect Vite `base` so GitHub Pages can load the model under /photum-fsoc-mvp/
+const MODEL_URL = `${import.meta.env.BASE_URL}FSOC.glb`
 useGLTF.preload(MODEL_URL)
 
 // ====================================================================
