@@ -50,6 +50,6 @@ I led this MVP in the **phoTUM** student club at TUM — from system overview do
 
 - **3D-printed hardware** — receiver aperture / mechanics that keep the optical path aligned and cut ambient light  
 - **Receiver electronics** — BPW34 + LM393 front-end into the Pico  
-- **Host software** — tiled JPEG framing, CRC-checked serial protocol, and the sender/receiver GUIs that show the image arrive live  
+- **Host software** — framing / protocol work and the sender–receiver GUI path for live tiled images (with the club team)
 
-Hardware and digital twin were a **team** effort; this repo packages the public snapshot of the demo. Club context: [photum.org](https://photum.org/).
+Hardware, digital twin, and software were a **team** effort; this repo packages the public snapshot of the demo. Club context: [photum.org](https://photum.org/).
