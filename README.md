@@ -1,6 +1,6 @@
-# phoTUM Free-Space Optical Link — MVP
+# photum Free-Space Optical Link — MVP
 
-A working free-space optical link that sends **live image tiles over a red laser** — built and demonstrated with [phoTUM](https://photum.org/) at Photonics Night (TUM, July 2026).
+A working free-space optical link that sends **live image tiles over a red laser** — built and demonstrated with [photum](https://photum.org/) at Photonics Night (TUM, July 2026).
 
 Host software frames the picture, an Arduino drives a KY-008 with on–off keying, light crosses ~1.5 m of free space, and a photodiode front-end plus Raspberry Pi Pico feed a receiver GUI that paints the image tile by tile. An interactive 3D twin lets you explore the same setup in the browser.
 
@@ -46,7 +46,7 @@ Details: [`software/protocol.md`](software/protocol.md).
 
 ## My role
 
-I led this MVP in the **phoTUM** student club at TUM — from system overview down to the pieces that make the link work. In particular I contributed to:
+I led this MVP in the **photum** student club at TUM — from system overview down to the pieces that make the link work. In particular I contributed to:
 
 - **3D-printed hardware** — receiver aperture / mechanics that keep the optical path aligned and cut ambient light  
 - **Receiver electronics** — BPW34 + LM393 front-end into the Pico  

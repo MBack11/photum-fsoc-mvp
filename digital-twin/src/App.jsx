@@ -10,7 +10,7 @@ const norm = (s) => (s || '').toLowerCase().replace(/[\s_]+/g, ' ').trim()
 
 const LASER_INFO = {
   label: 'KY-008 Laser Module',
-  desc: 'The KY-008 is the optical transmitter of the setup. It converts the digital signal from the microcontroller into modulated red laser light and directs it toward the receiver. It currently sends 01010000011010000110111101110100011 1010101101101 which is Photum in ASCII.',
+  desc: 'The KY-008 is the optical transmitter of the setup. It converts the digital signal from the microcontroller into modulated red laser light and directs it toward the receiver. It currently sends 01010000011010000110111101110100011 1010101101101 which is photum in ASCII.',
   specs: {
     Model: 'KY-008',
     Role: 'Optical transmitter',

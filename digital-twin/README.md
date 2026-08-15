@@ -1,6 +1,6 @@
 # FSO link — interactive 3D digital twin
 
-React + React Three Fiber viewer for the phoTUM free-space optical link.
+React + React Three Fiber viewer for the photum free-space optical link.
 
 **Live:** [mback11.github.io/photum-fsoc-mvp](https://mback11.github.io/photum-fsoc-mvp/)  
 Parent repo: [MBack11/photum-fsoc-mvp](https://github.com/MBack11/photum-fsoc-mvp)
@@ -33,4 +33,4 @@ npm run preview
 - Model → replace `.glb` in `public/` and update `MODEL_URL` in `src/Experiment.jsx`
 - Style → `src/styles.css`
 
-Built with [phoTUM](https://photum.org/).
+Built with [photum](https://photum.org/).
