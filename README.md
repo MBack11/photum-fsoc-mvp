@@ -1,6 +1,6 @@
 # phoTUM Free-Space Optical Link — MVP
 
-Interactive digital twin, receiver optics/mechanics, receiver electronics, and host software for the [phoTUM](https://photum.org/) free-space optical (FSOC) link demonstrated at Photonics Night (TUM, July 2026).
+Interactive digital twin and host software for the [phoTUM](https://photum.org/) free-space optical (FSOC) link demonstrated at Photonics Night (TUM, July 2026).
 
 **Live 3D twin:** [mback11.github.io/photum-fsoc-mvp](https://mback11.github.io/photum-fsoc-mvp/)  
 **Club write-up:** [photum.org/mvp.html](https://photum.org/mvp.html)
@@ -34,14 +34,17 @@ Host (sender GUI)
 | Path | Contents |
 |------|----------|
 | [`digital-twin/`](digital-twin/) | React Three Fiber viewer (`FSOC.glb`), clickable parts, explode view |
-| [`hardware/`](hardware/) | Optics & mechanics V1.0 (lens hood, cone, rocker, rail) |
-| [`electronics/`](electronics/) | Receiver front-end notes (BPW34 + LM393) |
 | [`software/`](software/) | Frame protocol, `sender.py`, `receiver.py` |
-| [`media/`](media/) | Prototype photos |
+
+## Protocol (short)
+
+Images are sent as **JPEG tiles** in small serial **frames** (start `0x02`, sequence, length, payload, CRC-16, end `0x03`). Special sequences mark the full image size (`0xFFFE`) and each tile’s position/length (`0xFFFF`); normal sequences carry the JPEG bytes. The laser channel itself is plain OOK.
+
+Full write-up: [`software/protocol.md`](software/protocol.md).
 
 ## My role
 
-Work done in the phoTUM student club at TUM. This public repo packages the MVP for portfolio use. Hardware and digital twin are a **team** effort — see [photum.org](https://photum.org/). As project lead I overviewed the whole process and especially contributed to the 3D printed hardware as well as to the electronics. 
+Work done in the phoTUM student club at TUM. This public repo packages the MVP for portfolio use. Hardware and digital twin are a **team** effort — see [photum.org](https://photum.org/). As project lead I overviewed the whole process and especially contributed to the 3D printed hardware as well as to the electronics.
 
 ## Quick start
 
@@ -55,10 +58,12 @@ npm run dev
 
 ### Host software (image over laser)
 
+Needs Python 3 with PyQt6, pyserial, Pillow, numpy, and opencv-python.
+
 ```bash
 cd software
 python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
+pip install PyQt6 pyserial Pillow numpy opencv-python
 python sender.py    # TX host
 python receiver.py  # RX host
 ```
@@ -69,5 +74,3 @@ Firmware for the Arduino OOK driver and Pico receiver is not in this snapshot ye
 
 Built with **[phoTUM](https://photum.org/)**, Photonics Student Club at the Technical University of Munich.  
 Contact: photum.studentclub@gmail.com
-
-
